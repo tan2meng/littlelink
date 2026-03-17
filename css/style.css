@@ -239,6 +239,11 @@ a:hover {
 	padding: var(--spacing-s) 0;
 }
 
+/* Facebook Link - inline-block to restrict click area */
+.facebook-link {
+	display: inline-block;
+}
+
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
