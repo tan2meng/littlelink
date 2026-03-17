@@ -42,12 +42,14 @@
 	--button-text:#ffffff;
 	--button-background:#232627;
 	--button-border:1px solid #ffffff;
+}
 
 /* suda */
 .button.button-suda {
 	--button-text:#ffffff;
 	--button-background:#00ABFE;
 	--button-border:1px solid #ffffff;
+}
 	
 /* Renet */
 .button-renet {
@@ -80,7 +82,7 @@
 /* voluri */
 .button-voluri {
 	--button-text:#ffffff;
-	--button-background:##6D95F0;
+	--button-background:#6D95F0;
 	--button-border:1px solid #FFFFFF;
 }
 
