@@ -153,6 +153,7 @@ body {
 footer {
 	margin:var(--spacing-xxl) 0;            /* 4rem (64px) top and bottom */
     font-size:var(--scale-0);
+    text-align: center;
 }
 
 /* Responsive adjustments */
@@ -201,6 +202,14 @@ a:hover {
 	grid-column: 1 / -1;
 	justify-self: center;
 	max-width: 18.75rem;
+}
+
+/* Middle Footer - between two rows of buttons */
+.middle-footer {
+	text-align: center;
+	font-size: var(--scale-0);
+	margin: var(--spacing-l) 0;
+	padding: var(--spacing-s) 0;
 }
 
 /* Icons
@@ -303,11 +312,16 @@ a:hover {
 @media (max-width:48rem) {                  /* 768px */
 	.button-stack {
 		grid-template-columns: 1fr;
-	gap: 0.75rem;
+		gap: 0.75rem;
 	}
 	/* Reset last button centering for mobile single column */
 	.button-stack .button:nth-child(odd):last-child {
 		grid-column: auto;
+	}
+	/* Middle footer responsive adjustment */
+	.middle-footer {
+		margin: var(--spacing-m) 0;
+		padding: var(--spacing-xs) 0;
 	}
 }
 
