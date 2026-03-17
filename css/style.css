@@ -188,8 +188,27 @@ a:hover {
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Background Image behind title and subtitle
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.title-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+  margin-top: 2rem;
+}
+
+.title-background img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.15;
+}
+
 /* Button Stack - Grid Layout
-––––––––––––––––––––––––––––––––––––––––––––––––––– */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button-stack {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
