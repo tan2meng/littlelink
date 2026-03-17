@@ -194,17 +194,56 @@ a:hover {
 .button-stack {	display: grid;	grid-template-columns: repeat(2, 1fr);	gap: 1rem;	justify-content: center;	justify-items: center;	max-width: 40rem;	margin: 0 auto;
 }
 
-.button,button {	display:inline-flex;	align-items:center;	justify-content:center;	width:100%;	max-width: 18.75rem;	min-height:3rem;	padding:0.75rem 1rem;	font-size:1.125rem;	font-weight:700;	text-decoration:none;	white-space:normal;
-  	background-color:var(--button-background,rgba(255,255,255,0.1));	color:var(--button-text,#ffffff);	border:var(--button-border,1px solid rgba(255,255,255,0.2));	border-radius:0.5rem;	cursor:pointer;	box-sizing:border-box;	hyphens:auto;
-  	text-align:center;	line-height:1.3;
+.button,button {
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	max-width: 18.75rem;
+	min-height:3rem;
+	padding:0.75rem 1rem;
+	font-size:1.125rem;
+	font-weight:700;
+	text-decoration:none;
+	white-space:normal;
+	background-color:rgba(255,255,255,0.08);
+	color:#ffffff;
+	border:1px solid rgba(255,255,255,0.15);
+	border-radius:0.75rem;
+	cursor:pointer;
+	box-sizing:border-box;
+	hyphens:auto;
+	text-align:center;
+	line-height:1.3;
+	/* Glassmorphism effect */
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	/* Enhanced shadow for depth */
+	box-shadow: 
+		0 4px 6px rgba(0,0,0,0.1),
+		0 1px 3px rgba(0,0,0,0.08),
+		inset 0 1px 0 rgba(255,255,255,0.1);
 	transition: all 0.3s ease;
 }
 
 .button:hover,button:hover {
-	background-color:var(--button-background,rgba(255,255,255,0.2));
-	border-color: rgba(255,255,255,0.4);
+	background-color:rgba(255,255,255,0.15);
+	border-color: rgba(255,255,255,0.3);
 	transform: translateY(-2px);
+	box-shadow: 
+		0 8px 12px rgba(0,0,0,0.15),
+		0 3px 6px rgba(0,0,0,0.1),
+		inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+	.button,button {
+		background-color:rgba(255,255,255,0.15);
+	}
+	.button:hover,button:hover {
+		background-color:rgba(255,255,255,0.25);
+	}
 }
 
 /* Center the last button when it's alone in the row (odd number of buttons) */
