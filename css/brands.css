@@ -38,13 +38,13 @@
 	--button-border:1px solid #ffffff;
 }
 /* xzwl */
-.button.button-default {
+.button.button-xzwl {
 	--button-text:#ffffff;
 	--button-background:#232627;
 	--button-border:1px solid #ffffff;
 
 /* suda */
-.button.button-default {
+.button.button-suda {
 	--button-text:#ffffff;
 	--button-background:#00ABFE;
 	--button-border:1px solid #ffffff;
