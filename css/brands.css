@@ -49,37 +49,38 @@
 	--button-background:#00ABFE;
 	--button-border:1px solid #ffffff;
 	
-/* Amazon */
-.button-amazon {
+/* Renet */
+.button-renet {
 	--button-text:#000000;
-	--button-background:#FFFFFF;
-	--button-border:1px solid #212121;
+	--button-background:#935CE4;
+	--button-border:1px solid #ffffff;
 }
 
-/* Amazon Music */
-.button-amazon-music {
+/* Vircs */
+.button-vircs {
 	--button-text:#000000;
-	--button-background:#25D1DA;
+	--button-background:#09427A;
+    --button-border:1px solid #ffffff;
 }
 
-/* Apple App Store */
-.button-appstore {
+/* Residential-IDC */
+.button-ridc {
 	--button-text:#FFFFFF;
-	--button-background:#000000;
+	--button-background:#769727;
 	--button-border:1px solid #FFFFFF;
 }
 
-/* Apple Invites */
-.button-invites {
+/* qq.pw */
+.button-qqpw {
 	--button-text:#FFFFFF;
-	--button-background:#000000;
+	--button-background:#195C75;
 	--button-border:1px solid #FFFFFF;
 }
 
-/* Apple Music */
-.button-apple-music {
+/* voluri */
+.button-voluri {
 	--button-text:#ffffff;
-	--button-background:#000000;
+	--button-background:##6D95F0;
 	--button-border:1px solid #FFFFFF;
 }
 
@@ -89,10 +90,10 @@
 	background-image:linear-gradient(to bottom,#FB5C74,#FA233B);
 }
 
-/* Apple Podcasts */
-.button-apple-podcasts {
+/* SixtyNet */
+.button-apple-sixtynet {
 	--button-text:#ffffff;
-	--button-background:#000000;
+	--button-background:#98BDD6;
 	--button-border:1px solid #FFFFFF;
 }
 
