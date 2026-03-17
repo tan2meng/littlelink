@@ -285,6 +285,7 @@ a:hover {
 /* Dark theme */
 :root.theme-dark {
 	color-scheme:dark;
+	background-color:#1a1a1a;
 }
 :root.theme-dark :focus-visible {
 	outline: 2px solid #4899F7;
@@ -317,6 +318,9 @@ a:hover {
 	color-scheme:light dark;
 }
 @media (prefers-color-scheme:dark) {
+	:root.theme-auto {
+	background-color:#1a1a1a;
+	}
 	:root.theme-auto body {
 	background-color:#1a1a1a;
 	color:#ffffff;
